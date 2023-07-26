@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/navbar.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./index2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      window.addEventListener("resize", function () {
+        "use strict";
+        window.location.reload();
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // make it as accordion for smaller screens
+        if (window.innerWidth > 992) {
+          document
+            .querySelectorAll(".navbar .nav-item")
+            .forEach(function (everyitem) {
+              everyitem.addEventListener("mouseover", function (e) {
+                let el_link = this.querySelector("a[data-bs-toggle]");
+
+                if (el_link != null) {
+                  let nextEl = el_link.nextElementSibling;
+                  el_link.classList.add("show");
+                  nextEl.classList.add("show");
+                }
+              });
+              everyitem.addEventListener("mouseleave", function (e) {
+                let el_link = this.querySelector("a[data-bs-toggle]");
+
+                if (el_link != null) {
+                  let nextEl = el_link.nextElementSibling;
+                  el_link.classList.remove("show");
+                  nextEl.classList.remove("show");
+                }
+              });
+            });
+        }
+        // end if innerWidth
+      });
+      // DOMContentLoaded  end
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <header class="px pr">
+      <div class="container-fluid">
+        <div class="row align-items-baseline">
+          <div class="col-md-10">
+            <a class="navbar-brand" href="home page.html"
+              ><img src="./image/header_logo.png" alt="Logo" />
+              <span class="spanHeader"
+                >Indian Potato Association,Shimla <br />
+                <small
+                  >(Registered Society under Indian Societies Registration Act
+                  1860 )</small
+                ></span
+              ></a
+            >
+          </div>
+          <div class="col-md-2 ">
+          
+                    <div class="join-member">
+                <a class="nav-link text-dark join_now" href="applyNow.html"
+                  ><i class="fa-solid fa-plus"></i> Join New Member
+                </a>
+            
+              </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg navbar_bg">
+      <div class="container">
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main_nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-White nav-active" href="home page.html">Home </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/History.html"> History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="constitution-by-laws.html"
+                      >Constitution / By laws
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Present Executive.html">
+                      Present Executive
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="past-executive.html"
+                      >Past Executive
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-White" href="Membership.html">
+                  Membership
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Awards
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="ipa award.html"> IPA Awards</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ipa fellow.html">
+                      IPA Fellow
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Publications
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="potato journal.html">
+                      Potato Journal</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a class="dropdown-item" href="#"> Editorinal Board</a>
+                  </li> -->
+                  <!-- <li>
+                    <a class="dropdown-item" href="#"> IPA News Letter</a>
+                  </li> -->
+                  <li>
+                    <a class="dropdown-item" href="Proceeding Books.html">
+                      Proceeding Books</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Activities
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="past Activity.html">
+                      Past Activity Chronology</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Present Proceeding.html">
+                      Present - Proceeding</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-White"
+                  href="Latest News .html"
+                  >Latest News
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-White" href="Contact.html">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Section End -->
+    <div
+      class="wpb_column vc_column_container vc_col-sm-12 mpc-column"
+      data-column-id="mpc_column-4664a92e1f63fbf"
+    >
+      <div class="vc_column-inner">
+        <div class="wpb_wrapper">
+          <div class="wpb_text_column wpb_content_element marquee">
+            <div class="wpb_wrapper">
+              <p>
+                <strong
+                  ><a href="applyNow.html" target="_blank" rel="noopener"
+                    >Click here to apply for new MemberShip</a
+                  ></strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section start -->
+    <section class="bg_image">
+      <div class="bg_color"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-9 pt-4">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img
+                    src="./image/ISA-Homepage-Slider.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block slider-line-color"
+                  >
+                    <h5>First slide label</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img
+                    src="./image/ISA-Homepage-Slider-1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block slider-line-color"
+                  >
+                    <h5>Second slide label</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img
+                    src="./image/ISA-Homepage-Slider2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block slider-line-color"
+                  >
+                    <h5>Third slide label</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img
+                    src="./image/ISA-Homepage-Slider3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block slider-line-color slider-line-color"
+                  >
+                    <h5>Fourth slide label</h5>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img
+                    src="./image/ISA-Newsletter-Homepage-Slider.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block slider-line-color slider-line-color"
+                  >
+                    <h5>Fifth slide label</h5>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-3 pt-4">
+            <div class="box-shadow">
+              <h5>Latest News</h5>
+              <p>ISA Awards for The Years 2021 & 2022</p>
+              <p>
+                First circular XXII Biennial National Symposium of ISA from
+                22–24 November 2023 at ICAR-CCARI, Ela Goa
+              </p>
+              <p>ISA Newsletter: July-December 2020</p>
+              <p>Fifth IAC: Day 4</p>
+              <a class="mpc-pagination" href="https://isa-india.in/page/2/"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section end -->
+    <!-- About Section Start -->
+    <section class="mt-4 ms-4 me-4">
+      <h2 class="mb-5 about_heading">About IPA</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="./image/aboutUs-img.jpg"
+              alt="aboutUs-img"
+              class="about_img"
+              width="100%"
+              height="95%"
+            />
+          </div>
+          <div class="col-md-6 about_data">
+            <h5 class="mb-5"><b>Since 1974</b></h5>
+            <h5 class="mb-5"><b>Indian Potato Association </b></h5>
+            <p>
+              Indian Potato Association (IPA) was established in 1974, to
+              coincide with the Silver Jubilee of Central Potato Research
+              Institute. The Headquarters of IPA is located at Central Potato
+              Research Institute, Shimla (HP).
+            </p>
+            <p class="mb-5">
+              The year 1999 was a milestone in the history of Association when
+              it organized a Global Conference on Potato at New Delhi to
+              celebrate its 25 Year jointly with Central Potato Research
+              Institute, Shimla that also completed its 50th year.
+            </p>
+            <a href="History.html" class="btn_about py-3 px-4">
+              Read More<i class="fa-solid fa-chevron-right ms-3"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+    <!-- Become Section Start -->
+    <section class="mt-5 ms-4 me-4">
+      <h1 class="entry-title" itemprop="headline">
+        Become A Part of Indian Potato Association Future
+      </h1>
+      <p style="text-align: justify" class="mt-3">
+        Since its inception, the membership of the Association has grown many
+        folds. At present, it has 1030 members of which 953 are Life members.
+        Besides research workers, the list of members includes farmers, cold
+        store owners, processors, and other industrialists etc.<br /><br />
+      </p>
+      <div class="container-fluid">
+        <div id="tablepress-3_wrapper" class="dataTables_wrapper no-footer">
+          <table
+            id="tablepress-3"
+            class="tablepress tablepress-id-3 dataTable no-footer sorting"
+            role="grid"
+            aria-describedby="tablepress-3_info"
+          >
+            <thead>
+              <tr class="row-1 odd" role="row">
+                <th
+                  class="column-2"
+                  tabindex="0"
+                  aria-controls="tablepress-3"
+                  rowspan="1"
+                  colspan="1"
+                  aria-label="Type: activate to sort column ascending"
+                  style="width: 588.469px"
+                >
+                  Type
+                </th>
+                <th
+                  class="column-3"
+                  tabindex="0"
+                  aria-controls="tablepress-3"
+                  rowspan="1"
+                  colspan="1"
+                  aria-label="INLAND (₹): activate to sort column ascending"
+                  style="width: 245.141px"
+                >
+                  INLAND (&#x20b9)
+                </th>
+                <th
+                  class="column-4"
+                  tabindex="0"
+                  aria-controls="tablepress-3"
+                  rowspan="1"
+                  colspan="1"
+                  aria-label="FOREIGN ($): activate to sort column ascending"
+                  style="width: 262.391px"
+                >
+                  FOREIGN ($)
+                </th>
+              </tr>
+            </thead>
+            <tbody class="row-hover">
+              <tr class="row-2 even">
+                <td class="column-2">Life Member</td>
+                <td class="column-3">&#x20b9 7,080<br /></td>
+                <td class="column-4">$472<br /></td>
+              </tr>
+              <tr class="row-3 odd">
+                <td class="column-2">Annual/Student Member</td>
+                <td class="column-3">&#x20b9 944 <br /></td>
+                <td class="column-4">$ 71 <br /></td>
+              </tr>
+              <tr class="row-4 even">
+                <td class="column-2">Libraries &amp; Institutions</td>
+                <td class="column-3">&#x20b9 1260</td>
+                <td class="column-4"><span class="column-3">$ 126 </span></td>
+              </tr>
+              <tr class="row-5 odd">
+                <td class="column-2">
+                  Subscription rate for Print + Online access
+                </td>
+                <td class="column-3">&#x20b9 1890 <br /></td>
+                <td class="column-4">
+                  <span class="column-3">$ 189 </span><br />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center pt-3">
+          <div class="col-md-6 text-end2">
+            <a href="/applyNow.html" class="btn-dow">Apply Now</a>
+          </div>
+          <div class="col-md-6 text-end2">
+            <a
+              href="./uploads/ipa-membership-form.pdf"
+              download="ipa-membership-form"
+              class="btn-dow"
+              >Download Membership Form</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Become Section End -->
+    <!-- IPA Section Start -->
+    <section>
+      <h1 class="mt-5 text-center mb-4">
+        Indian Potato Association Shimla <br />
+        Procedding & Books
+      </h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="IPA_gallery mb-4">
+            <div class="col-md-4">
+              <img src="./image/1.jpg" width="100%" class="mb-2" />
+            </div>
+            <div class="col-md-4">
+              <img src="./image/2.jpg" width="100%" class="mb-2" />
+            </div>
+            <div class="col-md-4">
+              <img src="./image/3.jpg" width="100%" class="mb-2" />
+            </div>
+          </div>
+          <div class="IPA_gallery">
+            <div class="col-md-4">
+              <img src="./image/4.jpg" width="100%" class="mb-2" />
+            </div>
+            <div class="col-md-4">
+              <img src="./image/5.jpg" width="100%" class="mb-2" />
+            </div>
+            <div class="col-md-4">
+              <img src="./image/6.jpg" width="100%" class="mb-2" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- IPA Section End -->
+    <!-- Contact us Start-->
+    <section class="mt-5 ms-4 me-4">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-3 Contact_data">
+            <h1>Contact Us</h1>
+            <p>
+                  <strong>Indian Potato Association </strong> <br>
+              Central Potato Research Institute <br>
+              CPRI Road, Near HP High Court,  <br>
+              Milsington Estate, Bemloi, <br>
+              Shimla, HP - 171001 <br>
+              Landline : +91-177-2625073 ,2624460 <br>
+              E-mail   : ipashimlahp@gmail.com <br>
+             
+            </p>
+          </div>
+          <div class="col-md-9">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416.466467328524!2d77.1695206644713!3d31.096764675048988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390578c0759bb89f%3A0xefbde52d97365c8a!2sCentral%20Potato%20Research%20Institute!5e0!3m2!1sen!2sin!4v1680938093855!5m2!1sen!2sin"
+              width="200"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact us End-->
+
+    <!-- Footer Start -->
+    <footer class="mt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Call and Mail Us</h3>
+
+            <address>
+              <p class="bold">
+                <i class="fa-solid fa-phone"></i>
+                +91-177-2625073 <br />
+                &nbsp; &nbsp; +91-177-2624460
+              </p>
+            </address>
+            <p class="envelope-icon">
+              <i class="fa fa-envelope"></i>
+              <a href="#"> ipashimlahp@gmail.com</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Useful Links</h3>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="History.html"> History</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="constitution-by-laws.html">Constitution /By laws</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Present Executive.html">Present Executive</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="past-executive.html">Past Executive</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="ipa award.html">IPA Awards</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="ipa fellow.html">IPA fellow</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 subsribe">
+            <h3>&nbsp</h3>
+
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Membership.html"> Membership</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="potato journal.html">Potato Journal</a>
+              </li>
+              <!-- <li>
+                <i class="fa-solid fa-chevron-right"></i> <a href="">Editorial Boards</a>
+              </li> -->
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Proceeding Books.html">Proceeding Books</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="past Activity.html"> Past Activity Chronology</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Present Proceeding.html"> Present - Proceeding</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Latest News .html">Latest News</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 social-sec">
+            <h3>Social</h3>
+            <p>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="text-center">
+          Copyright ©️ All Rights Reserved For Indian Potato Association Shimla
+          | <a href="https://www.honsol.com/ ">Designed & Developed by  Honsol</a> 
+      
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <button id="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Bootstrap Cdn Link -->
+    <script src="./js/index.js"></script>
+    <!-- ---up--down--- start-->
+
+    <script>
+      const scrollBtn = document.querySelector("#scroll-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollBtn.style.display = "block";
+        } else {
+          scrollBtn.style.display = "none";
+        }
+      });
+      scrollBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <!-- ---up--down---end -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 30,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 4,
+            },
+          },
+        });
+        $(".news").easyTicker({
+          direction: "up",
+          speed: "slow",
+          interval: 2000,
+          height: "auto",
+        });
+      });
+
+      const $dropdown = $(".dropdown");
+      const $dropdownToggle = $(".dropdown-toggle");
+      const $dropdownMenu = $(".dropdown-menu");
+      const showClass = "show";
+
+      $(window).on("load resize", function () {
+        if (this.matchMedia("(min-width: 768px)").matches) {
+          $dropdown.hover(
+            function () {
+              const $this = $(this);
+              $this.addClass(showClass);
+              $this.find($dropdownToggle).attr("aria-expanded", "true");
+              $this.find($dropdownMenu).addClass(showClass);
+            },
+            function () {
+              const $this = $(this);
+              $this.removeClass(showClass);
+              $this.find($dropdownToggle).attr("aria-expanded", "false");
+              $this.find($dropdownMenu).removeClass(showClass);
+            }
+          );
+        } else {
+          $dropdown.off("mouseenter mouseleave");
+        }
+      });
+
+      $(document).ready(function () {
+        $("#demo .carousel-caption").slideDown();
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $(".scrollToTop").fadeIn();
+          } else {
+            $(".scrollToTop").fadeOut();
+          }
+        });
+        $(".scrollToTop").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 800);
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>

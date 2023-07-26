@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+      />
+      <!-- <link rel="stylesheet" href="./css/navbar.css" /> -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="./css/index.css" />
+      <link rel="stylesheet" href="./css/navbar.css" />
+      <link rel="stylesheet" href="./index2.css" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"
+      ></script>
+      <script type="text/javascript">
+        window.addEventListener("resize", function () {
+          "use strict";
+          window.location.reload();
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+          // make it as accordion for smaller screens
+          if (window.innerWidth > 992) {
+            document
+              .querySelectorAll(".navbar .nav-item")
+              .forEach(function (everyitem) {
+                everyitem.addEventListener("mouseover", function (e) {
+                  let el_link = this.querySelector("a[data-bs-toggle]");
+
+                  if (el_link != null) {
+                    let nextEl = el_link.nextElementSibling;
+                    el_link.classList.add("show");
+                    nextEl.classList.add("show");
+                  }
+                });
+                everyitem.addEventListener("mouseleave", function (e) {
+                  let el_link = this.querySelector("a[data-bs-toggle]");
+
+                  if (el_link != null) {
+                    let nextEl = el_link.nextElementSibling;
+                    el_link.classList.remove("show");
+                    nextEl.classList.remove("show");
+                  }
+                });
+              });
+          }
+          // end if innerWidth
+        });
+        // DOMContentLoaded  end
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <title>Past Activity Chronology</title>
+    </head>
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <header class="px pr">
+      <div class="container-fluid">
+        <div class="row align-items-baseline">
+          <div class="col-md-10">
+            <a class="navbar-brand" href="home page.html"
+              ><img src="./image/header_logo.png" alt="Logo" />
+              <span class="spanHeader"
+                >Indian Potato Association,Shimla <br />
+                <small
+                  >(Registered Society under Indian Societies Registration Act
+                  1860 )</small
+                ></span
+              ></a
+            >
+          </div>
+          <div class="col-md-2 ">
+          
+            <div class="join-member">
+        <a class="nav-link text-dark join_now" href="applyNow.html"
+          ><i class="fa-solid fa-plus"></i> Join New Member
+        </a>
+    
+      </div>
+  </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg navbar_bg">
+      <div class="container">
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main_nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-White " href="home page.html">Home </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/History.html"> History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="constitution-by-laws.html"
+                      >Constitution / By laws
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Present Executive.html">
+                      Present Executive
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="past-executive.html"
+                      >Past Executive
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-White" href="Membership.html">
+                  Membership
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Awards
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="ipa award.html"> IPA Awards</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ipa fellow.html">
+                      IPA Fellow
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Publications
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="potato journal.html">
+                      Potato Journal</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a class="dropdown-item" href="#"> Editorinal Board</a>
+                  </li> -->
+                  <!-- <li>
+                    <a class="dropdown-item" href="#"> IPA News Letter</a>
+                  </li> -->
+                  <li>
+                    <a class="dropdown-item" href="Proceeding Books.html">
+                      Proceeding Books</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown nav-active">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Activities
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="past Activity.html">
+                      Past Activity Chronology</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Present Proceeding.html">
+                      Present - Proceeding</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-White"
+                  href="Latest News .html"
+                  >Latest News
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-White" href="Contact.html">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Section End -->
+    <section>
+      <div class="container-fluid">
+        <div class="membership">
+        <div class="row">
+          <div class="col-md-12 blog-part">
+            <div class="this-title">
+            
+                <h3>IPA Awards</h3>
+              
+            </div>
+            <!-- <ul class="post-meta list-icon">
+              <li>
+                <i class="fa-solid fa-user"></i>
+                <a href="">Executives</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-trophy"></i>
+                <a href="">Awards</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-book"></i>
+                <a href="">Constitutions</a>
+              </li>
+            </ul>
+            <div class="patato-activities mt-4">
+              <img src="./image/past activities2.jpg" alt="" />
+            </div> -->
+            <div class="this-summary mt-4">
+              <div class="text-justify">
+                1. Publishes a scientific journal, Potato Journal to promote
+                exchange of scientific information amongst the members. <br />
+                2. Publishes books on potato for dissemination of new
+                information and technology. <br />
+                3. Organizes both national and international conferences,
+                seminars/symposia, panel discussion, Farmers’ Melas etc. from
+                time to time. <br />
+                4. Confer awards and honours on eminent potato workers, growers,
+                etc. <br />
+
+                <br /><br />
+
+              
+                <h3 class="ipa_heading"> Important Seminars/Symposia Organized By The
+                  Association </h3>
+                      
+                  <ul class="ipa-list">
+                    <li>    1. International Seminar on
+                      <strong
+                        >“Approaches towards increasing the Potato Production in
+                        Developing Countries”</strong
+                      >at Central Potato Research Station,    Jalandhar (Punjab), &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      November 20-23, 1978.</li>
+             
+                
+                   <li>  2. Panel discussion on
+                    <strong>“Problems of potato cultivation in India”</strong> at
+                    Central Potato Research Institute,Shimla,June 13, 1986.</li>
+                
+                <li>           3. National Seminar on
+               <strong>“Current facets in potato research”</strong> at Central
+                          Potato Research Institute (Campus) ;December13-15, 1989.</li>
+                
+                   <li>   4. National Symposium on
+                    <strong
+                      >“Strategies for potato production, marketing, storage,
+                      processing”</strong
+                    >
+                    at Indian Agricultural Research Institute, New Delhi, December
+                    21-23, 1990.
+
+                   </li>
+                
+                     <li>     5. National Symposium on
+                      <strong>“Potato–Present and Future”</strong> at Central Potato
+                      Research Institute (Campus) Modipuram, March 1-3, 1993.
+                      </li>
+                 <li>    6. Group Discussion on
+                  <strong>“Potato based cropping systems”</strong> at Central
+                  Potato Research Institute, Shimla, during on 30 July, 1994.</li>
+                
+                   <li>     7. National Seminar on
+                    <strong
+                      >“Potato production constraints in low productivity
+                      areas”</strong
+                    >
+                    at Orissa University of Agriculture &amp; Technology,
+                    Bhubaneshwar on  September 6, 1997.</li>
+              
+                  <li>   8. <strong>Global Conference on Potato</strong>, New Delhi,
+                    December 6-11, 1999.</li>
+                   <li>    9. National Symposium on
+                    <strong>“Sustainability of Potato Revolution in India”</strong>
+                    at Central Potato Research Institute,Shimla, on July 31, 2001.</li>
+                   <li> 10. Symposium on
+                    <strong
+                      >“Potato Research Towards National Food and Nutritional
+                      Security and Dr. S. Ramanujam Birth Centenary
+                      Celebrations”</strong
+                    >
+                    at  Central Potato Research &nbsp; &nbsp; &nbsp; Institute, Shimla, October 2-3,2003.
+                  </li>
+                    <li>  11.
+                      <strong
+                        >“ICAR-IPA National Conference on IPR and Management of
+                        Agricultural Research”</strong
+                      >
+                      at NASC Auditorium, Pusa, New Delhi, August 27-29, 2005.<br /></li>   
+                              
+                       <li>             
+                        12. Symposium on
+                        <strong>“Current perspectives in Potato Research”</strong> at
+                        College of Agriculture, MPUAT, Udaipur,on September 11, 2005.</li>
+                    <li>  13. National Symposium on
+                      <strong>“A Step towards Brown Revolution with Potato”</strong>
+                      at Central Potato Research, Station, Muthorai, Udhagamandalam,
+                      on    January 19, 2007.</li>
+                
+                          <li>    14. <strong>“Global Potato Conference”</strong> at New Delhi
+                            during 9-12 December 2008.</li>
+                
+                         <li>    15. Seminar on <strong>“Potato in North East”</strong> at CPRS,
+                          Shillong during 8-9 May 2009.</li>
+                
+                             <li> 16. National consultation on
+                              <strong
+                                >“Production of Disease Free Quality Planting Material
+                                Propagated through Tubers and Rhizomes”</strong
+                              >
+                              at CPRIC,  Modipuram during 4-5 March &nbsp; &nbsp; &nbsp; &nbsp; 2011.</li>
+                           <li> 
+                            17. National Conference on
+                            <strong
+                              >“Genomics for Sustainable Food and Nutritional
+                              Security”</strong
+                            >
+                            at CPRI, Shimla on 26th November 2011.</li>
+                        <li>   
+                          18. National Consultation on
+                          <strong>“Potato Research and Development: Way Forward”</strong>
+                          at Orissa University of Agriculture and Technology, Bhubaneswar
+                          on     26th September 2012.</li>
+              
+                          <li>  19. Workshop on
+                            <strong
+                              >“Problems and Prospects of Seed Potato Production system in
+                              India”</strong
+                            >
+                            at CPRS, Patna on 20th September 2013.</li>
+                          <li>
+                            20. National Seminar on
+                            <strong>“Emerging Problems of Potato”</strong> at CPRI, Shimla
+                            on 1-2 November 2014.</li>
+              
+                    <li>     21. National Level Agriculture Fair
+                      <strong>“Eastern Zone Regional Agriculture Fair”</strong> at
+                      CPRS, Patna on 19-21 February 2015.</li>
+                
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Footer Start -->
+    <footer class="mt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Call and Mail Us</h3>
+
+            <address>
+              <p class="bold">
+                <i class="fa-solid fa-phone"></i>
+                +91-177-2625073 <br />
+                &nbsp; &nbsp; +91-177-2624460
+              </p>
+            </address>
+            <p class="envelope-icon">
+              <i class="fa fa-envelope"></i>
+              <a href="#"> ipashimlahp@gmail.com</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Useful Links</h3>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="History.html"> History</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="constitution-by-laws.html">Constitution /By laws</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Present Executive.html">Present Executive</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="past-executive.html">Past Executive</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="ipa award.html">IPA Awards</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="ipa fellow.html">IPA fellow</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 subsribe">
+            <h3>&nbsp</h3>
+
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Membership.html"> Membership</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="potato journal.html">Potato Journal</a>
+              </li>
+              <!-- <li>
+                <i class="fa-solid fa-chevron-right"></i> <a href="">Editorial Boards</a>
+              </li> -->
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Proceeding Books.html">Proceeding Books</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="past Activity.html"> Past Activity Chronology</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Present Proceeding.html"> Present - Proceeding</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Latest News .html">Latest News</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 social-sec">
+            <h3>Social</h3>
+            <p>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="text-center">
+          Copyright ©️ All Rights Reserved For Indian Potato Association Shimla
+          | <a href="https://www.honsol.com/ ">Designed & Developed by  Honsol</a> 
+      
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+      <button id="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+      <!-- Bootstrap Cdn Link -->
+      <script src="./js/index.js"></script>
+      <!-- ---up--down--- start-->
+  
+      <script>
+        const scrollBtn = document.querySelector("#scroll-to-top");
+  
+        window.addEventListener("scroll", () => {
+          if (window.pageYOffset > 300) {
+            scrollBtn.style.display = "block";
+          } else {
+            scrollBtn.style.display = "none";
+          }
+        });
+        scrollBtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      </script>
+      <!-- ---up--down---end -->
+  </body>
+</html>

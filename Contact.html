@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/navbar.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./index2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      window.addEventListener("resize", function () {
+        "use strict";
+        window.location.reload();
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // make it as accordion for smaller screens
+        if (window.innerWidth > 992) {
+          document
+            .querySelectorAll(".navbar .nav-item")
+            .forEach(function (everyitem) {
+              everyitem.addEventListener("mouseover", function (e) {
+                let el_link = this.querySelector("a[data-bs-toggle]");
+
+                if (el_link != null) {
+                  let nextEl = el_link.nextElementSibling;
+                  el_link.classList.add("show");
+                  nextEl.classList.add("show");
+                }
+              });
+              everyitem.addEventListener("mouseleave", function (e) {
+                let el_link = this.querySelector("a[data-bs-toggle]");
+
+                if (el_link != null) {
+                  let nextEl = el_link.nextElementSibling;
+                  el_link.classList.remove("show");
+                  nextEl.classList.remove("show");
+                }
+              });
+            });
+        }
+        // end if innerWidth
+      });
+      // DOMContentLoaded  end
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <title>Contact Us - IPA Shimla</title>
+  </head>
+  <body>
+     <!-- Header Section Start -->
+     <header class="px pr">
+      <div class="container-fluid">
+        <div class="row align-items-baseline">
+          <div class="col-md-10">
+            <a class="navbar-brand" href="home page.html"
+              ><img src="./image/header_logo.png" alt="Logo" />
+              <span class="spanHeader"
+                >Indian Potato Association,Shimla <br />
+                <small
+                  >(Registered Society under Indian Societies Registration Act
+                  1860 )</small
+                ></span
+              ></a
+            >
+          </div>
+          <div class="col-md-2 btn-nav">
+            <ul class="list-unstyled">
+              <li class="nav-item2">
+                <a class="nav-link text-dark join_now" href="applyNow.html"
+                  ><i class="fa-solid fa-plus"></i> Join New Member
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg navbar_bg">
+      <div class="container">
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main_nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-White " href="home page.html">Home </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/History.html"> History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="constitution-by-laws.html"
+                      >Constitution / By laws
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Present Executive.html">
+                      Present Executive
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="past-executive.html"
+                      >Past Executive
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-White" href="Membership.html">
+                  Membership
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Awards
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="ipa award.html"> IPA Awards</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ipa fellow.html">
+                      IPA Fellow
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Publications
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="potato journal.html">
+                      Potato Journal</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a class="dropdown-item" href="#"> Editorinal Board</a>
+                  </li> -->
+                  <!-- <li>
+                    <a class="dropdown-item" href="#"> IPA News Letter</a>
+                  </li> -->
+                  <li>
+                    <a class="dropdown-item" href="Proceeding Books.html">
+                      Proceeding Books</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Activities
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="past Activity.html">
+                      Past Activity Chronology</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Present Proceeding.html">
+                      Present - Proceeding</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-White"
+                  href="Latest News .html"
+                  >Latest News
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-White nav-active" href="Contact.html">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Section End -->
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-3 photos">
+            <div class="text-center">
+              <img
+                src="https://ipashimla.org/ver/wp-content/uploads/2022/09/pic.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_heading text-center">
+              <h3>President</h3>
+              <span class=""></span>
+              <p><strong>Dr. NK Pandey</strong></p>
+            </div>
+          </div>
+          <div class="col-md-3 photos">
+            <div class="text-center">
+              <img
+                src="https://ipashimla.org/ver/wp-content/uploads/2022/09/pic.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_heading text-center">
+              <h3>President</h3>
+              <span class=""></span>
+              <p><strong>Dr. NK Pandey</strong></p>
+            </div>
+          </div>
+          <div class="col-md-3 photos">
+            <div class="text-center">
+              <img
+                src="https://ipashimla.org/ver/wp-content/uploads/2022/09/pic.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_heading text-center">
+              <h3>President</h3>
+              <span class=""></span>
+              <p><strong>Dr. NK Pandey</strong></p>
+            </div>
+          </div>
+          <div class="col-md-3 photos">
+            <div class="text-center">
+              <img
+                src="https://ipashimla.org/ver/wp-content/uploads/2022/09/pic.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image_heading text-center">
+              <h3>President</h3>
+              <span class=""></span>
+              <p><strong>Dr. NK Pandey</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="d-flex gap-3 mb-5 msg-line">
+              <span class="vc_sep_line"></span>
+              <i class="fas fa-envelope"></i>
+              <div class="meassage">
+                <h4>Send us a message</h4>
+              </div>
+
+              <span class="vc_sep_line"></span>
+            </div>
+            <form action="" >
+              <p class="">
+                <label for=""> Your Name (required)</label> <br />
+                <input
+                  type="text"
+                  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                  style="max-width: 100%; width: 100%"
+                />
+              </p>
+              <p class="">
+                <label for=""> Your Email (required)</label> <br />
+                <input
+                  type="text"
+                  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                  style="max-width: 100%; width: 100%"
+                />
+              </p>
+              <p class="">
+                <label for=""> Subject</label> <br />
+                <input
+                  type="text"
+                  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                  style="max-width: 100%; width: 100%"
+                />
+              </p>
+              <p>
+                <label for="">Your Message</label>
+                <textarea
+                  name="your-message"
+                  cols="65"
+                  rows="10"
+                  class="wpcf7-form-control wpcf7-textarea"
+                  aria-invalid="false"
+                  style="width: 100%"
+                ></textarea>
+              </p>
+              <p>
+                <input
+                  type="submit"
+                  value="Send Message"
+                  class="wpcf7-form-control has-spinner wpcf7-submit"
+                  style="max-width: 100%"
+                /><span class="wpcf7-spinner"></span>
+              </p>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="wpb_wrapper">
+              <h2 style="text-align: center">
+                Indian Potato Association , Shimla
+              </h2>
+              <br />
+              <p>
+               
+                 <strong>  Indian Potato Association  </strong> <br>
+                Central Potato Research Institute <br>
+                CPRI Road, Near HP High Court, <br>
+                Milsington Estate, Bemloi, <br>
+                Shimla, HP - 171001 <br>
+                Landline : +91 -177-2625073, 2624460 <br>
+                E-mail   : ipashimlahp@gmail.com<br>
+                          
+              </p>
+              <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416.466467328524!2d77.1695206644713!3d31.096764675048988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390578c0759bb89f%3A0xefbde52d97365c8a!2sCentral%20Potato%20Research%20Institute!5e0!3m2!1sen!2sin!4v1680938093855!5m2!1sen!2sin"
+              width="200"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- Footer Start -->
+     <footer class="mt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Call and Mail Us</h3>
+
+            <address>
+              <p class="bold">
+                <i class="fa-solid fa-phone"></i>
+                +91-177-2625073 <br />
+                &nbsp; &nbsp; +91-177-2624460
+              </p>
+            </address>
+            <p class="envelope-icon">
+              <i class="fa fa-envelope"></i>
+              <a href="#"> ipashimlahp@gmail.com</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Useful Links</h3>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="History.html"> History</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="constitution-by-laws.html">Constitution /By laws</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Present Executive.html">Present Executive</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="past-executive.html">Past Executive</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="ipa award.html">IPA Awards</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="ipa fellow.html">IPA fellow</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 subsribe">
+            <h3>&nbsp</h3>
+
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Membership.html"> Membership</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="potato journal.html">Potato Journal</a>
+              </li>
+              <!-- <li>
+                <i class="fa-solid fa-chevron-right"></i> <a href="">Editorial Boards</a>
+              </li> -->
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Proceeding Books.html">Proceeding Books</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="past Activity.html"> Past Activity Chronology</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Present Proceeding.html"> Present - Proceeding</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Latest News .html">Latest News</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 social-sec">
+            <h3>Social</h3>
+            <p>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="text-center">
+          Copyright ©️ All Rights Reserved For Indian Potato Association Shimla
+          | <a href="https://www.honsol.com/ ">Designed & Developed by  Honsol</a> 
+      
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <button id="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Bootstrap Cdn Link -->
+    <script src="./js/index.js"></script>
+    <!-- ---up--down--- start-->
+
+    <script>
+      const scrollBtn = document.querySelector("#scroll-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollBtn.style.display = "block";
+        } else {
+          scrollBtn.style.display = "none";
+        }
+      });
+      scrollBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <!-- ---up--down---end -->
+  </body>
+</html>

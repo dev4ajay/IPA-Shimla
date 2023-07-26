@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/navbar.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="index2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      window.addEventListener("resize", function () {
+        "use strict";
+        window.location.reload();
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // make it as accordion for smaller screens
+        if (window.innerWidth > 992) {
+          document
+            .querySelectorAll(".navbar .nav-item")
+            .forEach(function (everyitem) {
+              everyitem.addEventListener("mouseover", function (e) {
+                let el_link = this.querySelector("a[data-bs-toggle]");
+
+                if (el_link != null) {
+                  let nextEl = el_link.nextElementSibling;
+                  el_link.classList.add("show");
+                  nextEl.classList.add("show");
+                }
+              });
+              everyitem.addEventListener("mouseleave", function (e) {
+                let el_link = this.querySelector("a[data-bs-toggle]");
+
+                if (el_link != null) {
+                  let nextEl = el_link.nextElementSibling;
+                  el_link.classList.remove("show");
+                  nextEl.classList.remove("show");
+                }
+              });
+            });
+        }
+        // end if innerWidth
+      });
+      // DOMContentLoaded  end
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <title>About Indian Potato Association Shimla</title>
+  </head>
+  <body>
+      <!-- Header Section Start -->
+      <header class="px pr">
+        <div class="container-fluid">
+          <div class="row align-items-baseline">
+            <div class="col-md-10">
+              <a class="navbar-brand" href="home page.html"
+                ><img src="./image/header_logo.png" alt="Logo" />
+                <span class="spanHeader"
+                  >Indian Potato Association,Shimla <br />
+                  <small
+                    >(Registered Society under Indian Societies Registration Act
+                    1860 )</small
+                  ></span
+                ></a
+              >
+            </div>
+            <div class="col-md-2">
+              <div class="join-member">
+                <a class="nav-link text-dark join_now" href="applyNow.html"
+                  ><i class="fa-solid fa-plus"></i> Join New Member
+                </a>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header Section End -->
+      <!-- Navbar Section Start -->
+      <nav class="navbar navbar-expand-lg navbar_bg">
+        <div class="container">
+          <button
+            class="navbar-toggler text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main_nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main_nav">
+            <div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-White" href="home page.html">Home </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-White nav-active"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                  >
+                    About
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/History.html"> History</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="constitution-by-laws.html"
+                        >Constitution / By laws
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./Present Executive.html">
+                        Present Executive
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="past-executive.html"
+                        >Past Executive
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-White" href="Membership.html">
+                    Membership
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-White"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                  >
+                    Awards
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="ipa award.html"> IPA Awards</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="ipa fellow.html">
+                        IPA Fellow
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-White"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                  >
+                    Publications
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="potato journal.html">
+                        Potato Journal</a
+                      >
+                    </li>
+                    <!-- <li>
+                      <a class="dropdown-item" href="#"> Editorinal Board</a>
+                    </li> -->
+                    <!-- <li>
+                      <a class="dropdown-item" href="#"> IPA News Letter</a>
+                    </li> -->
+                    <li>
+                      <a class="dropdown-item" href="Proceeding Books.html">
+                        Proceeding Books</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-White"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                  >
+                    Activities
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="past Activity.html">
+                        Past Activity Chronology</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="Present Proceeding.html">
+                        Present - Proceeding</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-White"
+                    href="Latest News .html"
+                    >Latest News
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-White" href="Contact.html">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Section End -->
+
+    <div class="container-fluid">
+      <div class="history-sec">
+        <div class="">
+          <h1> About Indian Potato Assocition</h1>
+          <p class="text-justify">
+            <strong>
+              (Registered Society under Indian Societies Registration Act 1860
+              (Act XXI of 1860)
+              <br />
+              (Founded in 1974, Reg. No. 206/74)
+            </strong>
+
+            <br />
+
+            Indian Potato Association (IPA) was established in 1974, to coincide
+            with the Silver Jubilee of Central Potato Research Institute. The
+            Headquarters of IPA is located at Central Potato Research Institute,
+            Shimla (HP). Late Dr. Mukhtar Singh, the then Director, Central
+            Potato Research Institute conceptualized the idea of formation of
+            Association in order to bring all the potato workers, associated
+            with the cause of potato, under one umbrella. He was also the
+            founder President of the association. Since then, the Association
+            has been nurtured by many a stalwart without whom the Association
+            would not have attained the present heights. For encouraging potato
+            research and development, the Association publishes an
+            internationally renowned Potato Journal.
+            <br />
+            <br />
+
+            The year 1999 was a milestone in the history of Association when it
+            organized a Global Conference on Potato at New Delhi to celebrate
+            its 25 Year jointly with Central Potato Research Institute, Shimla
+            that also completed its 50th year. It was a memorable year for it as
+            over 500 delegates including 85 foreign delegates shared their
+            experience and ideas on the potato research and technology. The
+            conference was acclaimed as the best organized conference in recent
+            years both by national and international agencies. It contributed
+            significantly to the knowledge of basic and applied science of
+            potato and helped in reorientation and strengthening of potato
+            research and development. To commemorate the “International Year of
+            the Potato” in 2008, Indian Association organized the Global Potato
+            Conference in New Delhi. The conference was attended by 551
+            delegates from more than 30 countries including 84 foreign
+            delegates. These conferences were acclaimed as the best organized
+            conferences in both by national and international agencies.
+            <br />
+            <br />
+            <strong>Structure </strong>
+            <br />
+
+            The Association has six zones each of which is headed by a
+            Vice-President and counselled by four councilors. President,
+            Secretary, Joint Secretary, and the Treasurer are all elected from
+            the Headquarter (Shimla), for a two-year term. Director General,
+            Indian Council of Agricultural Research and Secretary, DARE
+            Government of India is the Chief Patron. The Association also has an
+            Editorial Board headed by an Editor–in–Chief.
+          </p>
+        </div>
+      </div>
+    </div>
+     <!-- Footer Start -->
+     <footer class="mt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Call and Mail Us</h3>
+
+            <address>
+              <p class="bold">
+                <i class="fa-solid fa-phone"></i>
+                +91-177-2625073 <br />
+                &nbsp; &nbsp; +91-177-2624460
+              </p>
+            </address>
+            <p class="envelope-icon">
+              <i class="fa fa-envelope"></i>
+              <a href="#"> ipashimlahp@gmail.com</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Useful Links</h3>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="History.html"> History</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="constitution-by-laws.html">Constitution /By laws</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Present Executive.html">Present Executive</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="past-executive.html">Past Executive</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="ipa award.html">IPA Awards</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="ipa fellow.html">IPA fellow</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 subsribe">
+            <h3>&nbsp</h3>
+
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Membership.html"> Membership</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="potato journal.html">Potato Journal</a>
+              </li>
+              <!-- <li>
+                <i class="fa-solid fa-chevron-right"></i> <a href="">Editorial Boards</a>
+              </li> -->
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Proceeding Books.html">Proceeding Books</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="past Activity.html"> Past Activity Chronology</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Present Proceeding.html"> Present - Proceeding</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Latest News .html">Latest News</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 social-sec">
+            <h3>Social</h3>
+            <p>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="text-center">
+          Copyright ©️ All Rights Reserved For Indian Potato Association Shimla
+          | <a href="https://www.honsol.com/ ">Designed & Developed by  Honsol</a> 
+      
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <button id="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Bootstrap Cdn Link -->
+    <script src="./js/index.js"></script>
+    <!-- ---up--down--- start-->
+
+    <script>
+      const scrollBtn = document.querySelector("#scroll-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollBtn.style.display = "block";
+        } else {
+          scrollBtn.style.display = "none";
+        }
+      });
+      scrollBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <!-- ---up--down---end -->
+    <!-- Bootstrap Cdn Link -->
+    <script src="./js/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 30,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 4,
+            },
+          },
+        });
+        $(".news").easyTicker({
+          direction: "up",
+          speed: "slow",
+          interval: 2000,
+          height: "auto",
+        });
+      });
+
+      const $dropdown = $(".dropdown");
+      const $dropdownToggle = $(".dropdown-toggle");
+      const $dropdownMenu = $(".dropdown-menu");
+      const showClass = "show";
+
+      $(window).on("load resize", function () {
+        if (this.matchMedia("(min-width: 768px)").matches) {
+          $dropdown.hover(
+            function () {
+              const $this = $(this);
+              $this.addClass(showClass);
+              $this.find($dropdownToggle).attr("aria-expanded", "true");
+              $this.find($dropdownMenu).addClass(showClass);
+            },
+            function () {
+              const $this = $(this);
+              $this.removeClass(showClass);
+              $this.find($dropdownToggle).attr("aria-expanded", "false");
+              $this.find($dropdownMenu).removeClass(showClass);
+            }
+          );
+        } else {
+          $dropdown.off("mouseenter mouseleave");
+        }
+      });
+
+      $(document).ready(function () {
+        $("#demo .carousel-caption").slideDown();
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $(".scrollToTop").fadeIn();
+          } else {
+            $(".scrollToTop").fadeOut();
+          }
+        });
+        $(".scrollToTop").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 800);
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>

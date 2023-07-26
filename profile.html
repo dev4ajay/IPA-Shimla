@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/navbar.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./index2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      window.addEventListener("resize", function () {
+        "use strict";
+        window.location.reload();
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // make it as accordion for smaller screens
+        if (window.innerWidth > 992) {
+          document
+            .querySelectorAll(".navbar .nav-item")
+            .forEach(function (everyitem) {
+              everyitem.addEventListener("mouseover", function (e) {
+                let el_link = this.querySelector("a[data-bs-toggle]");
+
+                if (el_link != null) {
+                  let nextEl = el_link.nextElementSibling;
+                  el_link.classList.add("show");
+                  nextEl.classList.add("show");
+                }
+              });
+              everyitem.addEventListener("mouseleave", function (e) {
+                let el_link = this.querySelector("a[data-bs-toggle]");
+
+                if (el_link != null) {
+                  let nextEl = el_link.nextElementSibling;
+                  el_link.classList.remove("show");
+                  nextEl.classList.remove("show");
+                }
+              });
+            });
+        }
+        // end if innerWidth
+      });
+      // DOMContentLoaded  end
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <header class="px pr">
+      <div class="container-fluid">
+        <div class="row align-items-baseline">
+          <div class="col-md-10">
+            <a class="navbar-brand" href="home page.html"
+              ><img src="./image/header_logo.png" alt="Logo" />
+              <span class="spanHeader"
+                >Indian Potato Association,Shimla <br />
+                <small
+                  >(Registered Society under Indian Societies Registration Act
+                  1860 )</small
+                ></span
+              ></a
+            >
+          </div>
+          <div class="col-md-2 ">
+          
+            <div class="join-member">
+        <a class="nav-link text-dark join_now" href="applyNow.html"
+          ><i class="fa-solid fa-plus"></i> Join New Member
+        </a>
+    
+      </div>
+  </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg navbar_bg">
+      <div class="container">
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main_nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-White " href="home page.html">Home </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/History.html"> History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="constitution-by-laws.html"
+                      >Constitution / By laws
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Present Executive.html">
+                      Present Executive
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="past-executive.html"
+                      >Past Executive
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-White" href="Membership.html">
+                  Membership
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Awards
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="ipa award.html"> IPA Awards</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ipa fellow.html">
+                      IPA Fellow
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Publications
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="potato journal.html">
+                      Potato Journal</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a class="dropdown-item" href="#"> Editorinal Board</a>
+                  </li> -->
+                  <!-- <li>
+                    <a class="dropdown-item" href="#"> IPA News Letter</a>
+                  </li> -->
+                  <li>
+                    <a class="dropdown-item" href="Proceeding Books.html">
+                      Proceeding Books</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Activities
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="past Activity.html">
+                      Past Activity Chronology</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Present Proceeding.html">
+                      Present - Proceeding</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-White"
+                  href="Latest News .html"
+                  >Latest News
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-White" href="Contact.html">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Section End -->
+    <div class="inner-wrap pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <h2>Kalyan K. Mondal</h2>
+            <div class="text-center">
+              <img
+                src="https://www.ipsdis.org/image/cache/catalog/EC2020/KKM2-304x364.jpg"
+                alt="President 1"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="table-responsive theme-table">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>Name</td>
+                    <td>Kalyan K. Mondal</td>
+                  </tr>
+                  <tr>
+                    <td>Designation</td>
+                    <td>Principal Scientist</td>
+                  </tr>
+                  <tr>
+                    <td>Complete postal Address with city code</td>
+                    <td>
+                      Division of Plant Pathology, ICAR-Indian Agricultural
+                      Research Institute, New Delhi-110012
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Email IDs</td>
+                    <td>
+                      <a
+                        href="mailto:kalyanmondal@yahoo.com; mondal_kk@rediffmail.com"
+                        >kalyanmondal@yahoo.com; mondal_kk@rediffmail.com</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mobile No.</td>
+                    <td>9873313265, 9868153461</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h3 class="text-center mb-3">Brief Biodata</h3>
+            <div class="card">
+              <p
+                class="MsoListParagraphCxSpFirst"
+                style="
+                  margin: 3pt 0in;
+                  text-align: justify;
+                  color: rgb(46, 46, 46);
+                  font-size: 16px;
+                "
+              >
+                <font face="Arial"
+                  ><span style="font-weight: bolder"
+                    ><span
+                      lang="EN-US"
+                      style="font-size: 14px; line-height: 16.1px"
+                      >Birth &amp; Educations:&nbsp;</span
+                    ></span
+                  ><span
+                    lang="EN-US"
+                    style="font-size: 10pt; line-height: 15.3333px"
+                    ><span style="font-size: 14px"
+                      >Born at Kalyani, Nadia, West Bengal.</span
+                    ><span style="font-weight: bolder"
+                      ><span style="font-size: 14px">&nbsp;</span></span
+                    ><span style="font-size: 14px">BSc Ag (1991) and</span
+                    ><span style="font-weight: bolder"
+                      ><span style="font-size: 14px">&nbsp;</span></span
+                    ><span style="font-size: 14px"
+                      >MSc Ag (1993) from BCKV, Kalyani, and PhD from ICAR-IARI
+                      (1999)</span
+                    ><o:p></o:p></span
+                ></font>
+              </p>
+              <p
+                class="MsoListParagraphCxSpLast"
+                style="
+                  margin: 3pt 0in;
+                  text-align: justify;
+                  color: rgb(46, 46, 46);
+                  font-size: 16px;
+                "
+              >
+                <font face="Arial"
+                  ><span style="font-weight: bolder"
+                    ><span
+                      lang="EN-US"
+                      style="font-size: 14px; line-height: 16.1px"
+                      >Positions hold:&nbsp;</span
+                    ></span
+                  ><span
+                    lang="EN-US"
+                    style="font-size: 10pt; line-height: 15.3333px"
+                    ><span style="font-size: 14px"
+                      >Post-doctoral Research Associate (1999- 2000) at National
+                      Institute of Plant Biotechnology, Pusa Campus, New Delhi;
+                      Post-doctoral Associate (2000- 2001) at Advanced Centre
+                      for Plant Virology, Division of Plant Pathology, IARI, New
+                      Delhi; ). Scientist at CSKHPKV, Palampur (2001-2006);
+                      Senior Scientist, (2006-2012); Principal Scientist (since
+                      Dec, 2012) at. Div. of Plant Pathology, ICAR-IARI, New
+                      Delhi.</span
+                    ><o:p></o:p></span
+                ></font>
+              </p>
+              <p
+                class="MsoNormal"
+                style="
+                  margin: 3pt 0in;
+                  text-align: justify;
+                  color: rgb(46, 46, 46);
+                  font-size: 16px;
+                "
+              >
+                <font face="Arial"
+                  ><span style="font-weight: bolder"
+                    ><span
+                      lang="EN-US"
+                      style="font-size: 14px; line-height: 16.1px"
+                      >&nbsp;</span
+                    ></span
+                  ><span style="font-weight: bolder"
+                    ><span
+                      style="
+                        font-size: 14px;
+                        line-height: 16.1px;
+                        background-image: initial;
+                        background-position: initial;
+                        background-size: initial;
+                        background-repeat: initial;
+                        background-attachment: initial;
+                        background-origin: initial;
+                        background-clip: initial;
+                      "
+                      >Awards/Honours:</span
+                    ></span
+                  ><span style="font-size: 10pt; line-height: 15.3333px"
+                    ><span style="font-size: 14px"
+                      >&nbsp;Joint Secretary (Jan 2019 to Dec 2022); Councillor
+                      (Delhi Zone) (Jan 2011 to Dec 2012);&nbsp;</span
+                    ><span style="font-size: 14px"
+                      >Editor &amp; Senior Editor: Senior Editor-Phytopath News
+                      (2019-21); Editor-Indian Phytopathology (2018-2019);
+                      Editor-Indian Phytopathology (special issue) (2020);
+                      Associate Editor-Indian Phytopathology (</span
+                    ><span style="font-size: 14px"
+                      >2004-2007; 2011-2012).&nbsp;</span
+                    ><span style="font-size: 14px"
+                      >Member, The National Academy of Sciences India
+                      (2013);&nbsp;</span
+                    ></span
+                  ><span
+                    lang="EN-GB"
+                    style="font-size: 14px; line-height: 16.1px"
+                    >SARP Associate Award 2017, SARP, ICAR-NRCP, Solapur, MS
+                    (2017);&nbsp;</span
+                  ><span style="font-size: 14px; line-height: 16.1px"
+                    >Prof. J.P. Verma Memorial Award (2016).;&nbsp;</span
+                  ><span
+                    lang="EN-GB"
+                    style="font-size: 14px; line-height: 16.1px"
+                    >Amulya Lahiri Smriti Gold Medal, WBCHSE (1987); Prof M. K.
+                    Patel Memorial Young Scientist Award (2008); Prof M J
+                    Narasimhan Academic Merit award (2001)</span
+                  ><span style="font-size: 10pt; line-height: 15.3333px"
+                    ><o:p></o:p></span
+                ></font>
+              </p>
+              <p
+                class="MsoNormal"
+                style="
+                  margin: 3pt 0in;
+                  text-align: justify;
+                  color: rgb(46, 46, 46);
+                  font-size: 16px;
+                "
+              >
+                <font face="Arial"
+                  ><span style="font-weight: bolder"
+                    ><span
+                      style="
+                        font-size: 14px;
+                        line-height: 16.1px;
+                        background-image: initial;
+                        background-position: initial;
+                        background-size: initial;
+                        background-repeat: initial;
+                        background-attachment: initial;
+                        background-origin: initial;
+                        background-clip: initial;
+                      "
+                      >Fellow:&nbsp;</span
+                    ></span
+                  ><span
+                    lang="EN-GB"
+                    style="font-size: 14px; line-height: 16.1px"
+                    >Fellow&nbsp;</span
+                  ><span
+                    lang="EN-GB"
+                    style="font-size: 10pt; line-height: 15.3333px"
+                    ><span style="font-size: 14px"
+                      >Indian Phytopathological Society (2013)</span
+                    ><o:p></o:p></span
+                ></font>
+              </p>
+              <p>
+                <span style="color: rgb(46, 46, 46); font-size: 14px"></span
+                ><span style="color: rgb(46, 46, 46); font-size: 14px"></span
+                ><span style="color: rgb(46, 46, 46); font-size: 14px"></span
+                ><span style="color: rgb(46, 46, 46); font-size: 14px"></span
+                ><font
+                  face="Arial"
+                  style="color: rgb(46, 46, 46); font-size: 16px"
+                  ><span style="font-weight: bolder"
+                    ><span
+                      style="
+                        font-size: 14px;
+                        line-height: 16.1px;
+                        background-image: initial;
+                        background-position: initial;
+                        background-size: initial;
+                        background-repeat: initial;
+                        background-attachment: initial;
+                        background-origin: initial;
+                        background-clip: initial;
+                      "
+                      >Research Areas &amp;&nbsp;</span
+                    ><span style="font-size: 10pt; line-height: 15.3333px"
+                      ><span style="font-size: 14px"
+                        >Significant contributions:</span
+                      ><span
+                        style="
+                          background-image: initial;
+                          background-position: initial;
+                          background-size: initial;
+                          background-repeat: initial;
+                          background-attachment: initial;
+                          background-origin: initial;
+                          background-clip: initial;
+                          font-size: 14px;
+                        "
+                        >&nbsp;</span
+                      ></span
+                    ></span
+                  ><span style="font-size: 10pt; line-height: 15.3333px"
+                    ><span style="font-size: 14px"
+                      >Dr. Mondal was the first to decipher the</span
+                    ><span style="font-weight: bolder"
+                      ><span style="font-size: 14px">&nbsp;</span></span
+                    ><span style="font-size: 14px"
+                      >repertoire of Type 3 Secretion System (T3SS) effectors in
+                      two nationally important bacterial pathogens,&nbsp;</span
+                    ><i
+                      ><span style="font-size: 14px"
+                        >Xanthomonas oryzae</span
+                      ></i
+                    ><span style="font-size: 14px">&nbsp;pv.&nbsp;</span
+                    ><i><span style="font-size: 14px">oryzae</span></i
+                    ><span style="font-size: 14px">&nbsp;(Xoo) and&nbsp;</span
+                    ><i><span style="font-size: 14px">X. axonopodis</span></i
+                    ><span style="font-size: 14px">&nbsp;pv.&nbsp;</span
+                    ><i><span style="font-size: 14px">punicae&nbsp;</span></i
+                    ><span style="font-size: 14px"
+                      >(Xap) causing blight of rice and pomegranate,
+                      respectively. Dr. Mondal’s detailed functional studies
+                      unraveled that two T3SS effectors, namely XopF and XopR
+                      play significant role in disease development in rice. His
+                      group further identified cognate rice receptors that
+                      interacts with XopF and demonstrated that silencing those
+                      targets could lead to disease resistance. His team
+                      determined the race status of Xoo and&nbsp;</span
+                    ></span
+                  ><span
+                    lang="EN-GB"
+                    style="font-size: 14px; line-height: 16.1px"
+                    >contributed in the development&nbsp;</span
+                  ><span style="font-size: 14px; line-height: 16.1px"
+                    >bacterial blight resistance&nbsp;</span
+                  ><span
+                    lang="EN-GB"
+                    style="font-size: 14px; line-height: 16.1px"
+                    >rice varieties,&nbsp;</span
+                  ><span style="font-size: 10pt; line-height: 15.3333px"
+                    ><span style="font-size: 14px"
+                      >Pusa 1592, Pusa 1728 and Pusa 1718 having&nbsp;</span
+                    ><i><span style="font-size: 14px">xa13</span></i
+                    ><span style="font-size: 14px">&nbsp;and&nbsp;</span
+                    ><i><span style="font-size: 14px">Xa21</span></i
+                    ><span style="font-size: 14px">&nbsp;genes. In&nbsp;</span
+                    ><span style="font-size: 14px">Xap,</span
+                    ><span style="font-size: 14px"
+                      >&nbsp;Dr. Mondal’s group demonstrated that T3SS effectors
+                      like XopC2, XopL and XopN play crucial role in modulating
+                      pomegranate PTI. He was the first to conclusively prove
+                      relatedness of pv.&nbsp;</span
+                    ><i><span style="font-size: 14px">punicae</span></i
+                    ><span style="font-size: 14px">&nbsp;with&nbsp;</span
+                    ><i
+                      ><span style="font-size: 14px">Xanthomonas citri</span></i
+                    ><i><span style="font-size: 14px">.&nbsp;</span></i
+                    ><span style="font-size: 14px"
+                      >Towards searching for novel disease management options,
+                      Dr. Mondal investigated the antibacterial properties of
+                      nanocopper against Xap and patented&nbsp;</span
+                    ></span
+                  ><span style="font-size: 10pt; line-height: 15.3333px"
+                    ><span style="font-size: 14px">(</span
+                    ><span style="background: lightgrey; font-size: 14px"
+                      >Patent No.&nbsp;</span
+                    ></span
+                  ><span
+                    style="
+                      font-size: 14px;
+                      line-height: 16.1px;
+                      background: lightgrey;
+                    "
+                    >294416</span
+                  ><span
+                    style="
+                      font-size: 14px;
+                      line-height: 16.1px;
+                      background: lightgrey;
+                    "
+                    >-dt 2018/03/16, India)</span
+                  ><span style="font-size: 14px; line-height: 16.1px"
+                    >&nbsp;a nanocopper based formulation for the management of
+                    bacterial blight of pomegranate. Besides, Dr. Mondal
+                    developed and commercialized a&nbsp;</span
+                  ><span
+                    lang="EN-GB"
+                    style="font-size: 14px; line-height: 16.1px"
+                    >PCR detection kit&nbsp;</span
+                  ><span style="font-size: 10pt; line-height: 15.3333px"
+                    ><span style="font-size: 14px"
+                      >for pomegranate bacterial blight for efficient detection
+                      which is necessary to produce quality planting materials.
+                      He established the etiology of emerging bacterial diseases
+                      like rice panicle blight (</span
+                    ><i
+                      ><span style="font-size: 14px"
+                        >Burkholderia glumae</span
+                      ></i
+                    ><span style="font-size: 14px">), tinda fruit rot (</span
+                    ><i
+                      ><span style="font-size: 14px"
+                        >Pseudomonas aeruginosa</span
+                      ></i
+                    ><span style="font-size: 14px"
+                      >) and rice leaf blight (</span
+                    ><i><span style="font-size: 14px">Pantoea ananatis</span></i
+                    ><span style="font-size: 14px"
+                      >). Dr. Mondal visited Stanford University, USA as
+                      visiting scholar. Besides, he visited China, Philippines,
+                      Vietnam, Thailand for delivering invited talks in
+                      International conferences</span
+                    ></span
+                  ><span style="font-size: 14px; line-height: 16.1px"
+                    >.</span
+                  ></font
+                ><br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Start -->
+    <footer class="mt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Call and Mail Us</h3>
+
+            <address>
+              <p class="bold">
+                <i class="fa-solid fa-phone"></i>
+                +91-177-2625073 <br />
+                &nbsp; &nbsp; +91-177-2624460
+              </p>
+            </address>
+            <p class="envelope-icon">
+              <i class="fa fa-envelope"></i>
+              <a href="#"> ipashimlahp@gmail.com</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Useful Links</h3>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="History.html"> History</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="constitution-by-laws.html">Constitution /By laws</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Present Executive.html">Present Executive</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="past-executive.html">Past Executive</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="ipa award.html">IPA Awards</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="ipa fellow.html">IPA fellow</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 subsribe">
+            <h3>&nbsp</h3>
+
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Membership.html"> Membership</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="potato journal.html">Potato Journal</a>
+              </li>
+              <!-- <li>
+                <i class="fa-solid fa-chevron-right"></i> <a href="">Editorial Boards</a>
+              </li> -->
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Proceeding Books.html">Proceeding Books</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="past Activity.html"> Past Activity Chronology</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Present Proceeding.html"> Present - Proceeding</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Latest News .html">Latest News</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 social-sec">
+            <h3>Social</h3>
+            <p>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="text-center">
+          Copyright ©️ All Rights Reserved For Indian Potato Association Shimla
+          | <a href="https://www.honsol.com/ ">Designed & Developed by  Honsol</a> 
+      
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <button id="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Bootstrap Cdn Link -->
+    <!-- ---up--down--- start-->
+
+    <script>
+      const scrollBtn = document.querySelector("#scroll-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollBtn.style.display = "block";
+        } else {
+          scrollBtn.style.display = "none";
+        }
+      });
+      scrollBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <!-- ---up--down---end -->
+  </body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+      />
+      <!-- <link rel="stylesheet" href="./css/navbar.css" /> -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="./css/index.css" />
+      <link rel="stylesheet" href="./css/navbar.css" />
+      <link rel="stylesheet" href="./index2.css" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"
+      ></script>
+      <script type="text/javascript">
+        window.addEventListener("resize", function () {
+          "use strict";
+          window.location.reload();
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+          // make it as accordion for smaller screens
+          if (window.innerWidth > 992) {
+            document
+              .querySelectorAll(".navbar .nav-item")
+              .forEach(function (everyitem) {
+                everyitem.addEventListener("mouseover", function (e) {
+                  let el_link = this.querySelector("a[data-bs-toggle]");
+
+                  if (el_link != null) {
+                    let nextEl = el_link.nextElementSibling;
+                    el_link.classList.add("show");
+                    nextEl.classList.add("show");
+                  }
+                });
+                everyitem.addEventListener("mouseleave", function (e) {
+                  let el_link = this.querySelector("a[data-bs-toggle]");
+
+                  if (el_link != null) {
+                    let nextEl = el_link.nextElementSibling;
+                    el_link.classList.remove("show");
+                    nextEl.classList.remove("show");
+                  }
+                });
+              });
+          }
+          // end if innerWidth
+        });
+        // DOMContentLoaded  end
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <title>IPA Award </title>
+    </head>
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <header class="px pr">
+      <div class="container-fluid">
+        <div class="row align-items-baseline">
+          <div class="col-md-10">
+            <a class="navbar-brand" href="home page.html"
+              ><img src="./image/header_logo.png" alt="Logo" />
+              <span class="spanHeader"
+                >Indian Potato Association,Shimla <br />
+                <small
+                  >(Registered Society under Indian Societies Registration Act
+                  1860 )</small
+                ></span
+              ></a
+            >
+          </div>
+          <div class="col-md-2 ">
+          
+            <div class="join-member">
+        <a class="nav-link text-dark join_now" href="applyNow.html"
+          ><i class="fa-solid fa-plus"></i> Join New Member
+        </a>
+    
+      </div>
+  </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg navbar_bg">
+      <div class="container">
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main_nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-White " href="home page.html">Home </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/History.html"> History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="constitution-by-laws.html"
+                      >Constitution / By laws
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Present Executive.html">
+                      Present Executive
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="past-executive.html"
+                      >Past Executive
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-White" href="Membership.html">
+                  Membership
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White nav-active"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Awards
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="ipa award.html"> IPA Awards</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ipa fellow.html">
+                      IPA Fellow
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Publications
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="potato journal.html">
+                      Potato Journal</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a class="dropdown-item" href="#"> Editorinal Board</a>
+                  </li> -->
+                  <!-- <li>
+                    <a class="dropdown-item" href="#"> IPA News Letter</a>
+                  </li> -->
+                  <li>
+                    <a class="dropdown-item" href="Proceeding Books.html">
+                      Proceeding Books</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-White"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Activities
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="past Activity.html">
+                      Past Activity Chronology</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Present Proceeding.html">
+                      Present - Proceeding</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-White"
+                  href="Latest News .html"
+                  >Latest News
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-White" href="Contact.html">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Section End -->
+    <section>
+      <div class="container-fluid ">
+        <div class=" membership">
+        <div class="row">
+          <div class="col-md-12 blog-part">
+            
+              
+              <div class="this-title">
+              
+                <h3>IPA Awards</h3>
+            
+            </div>
+          
+            <div class="this-summary mt-4">
+              <p>
+                The Association has instituted several awards to promote
+                excellence in the field of potato research and development in
+                the country. They are:
+                <br />
+                1. IPA Best Paper Award (for the papers published in Potato
+                Journal).
+                <br />
+                2. Best Poster Award
+                <br />
+                3. Ramanujam Memorial Lecture Award
+                <br />
+                4. IPA-Kaushalya Sikka memorial Award
+                <br />
+                5. IPA-Chandra Prabha Singh Young Scientist Award
+                <br />
+                6. Potato Grower of the Year Award
+                <br />
+               
+            
+                <h3 class="ipa_heading"> IPA Best Paper Award </h3>
+                <br />
+                Normally only full papers published in a particular volume of an
+                year in Potato Journal, are considered for the award. The paper
+                may be on applied or basic aspects or dealing with development
+                of new techniques or concepts. If the papers are published in a
+                series, each paper is to be considered on its own merit.
+                <br />
+
+                Following criteria is followed for Judging the best paper:
+                <br />
+                (a) Originality, reliability and objective of the research
+                findings.
+                <br />
+                (b) Significance of the findings.
+                <br />
+                (c) Methodology used.
+                <br />
+                (d) Presentation of the paper.
+                <br />
+                <br />
+
+                The award is given every year and only one paper is considered
+                for the award. The award consists of a certificate and a ‘Gold
+                Plated Medal’. In case of joint papers, every author is awarded
+                with a certificate and a medal. The award is effective from
+                1994.
+                <br />
+                <br />
+              
+                <h3 class="ipa_heading">  Ramanujam Memorial Lecture Award </h3>
+                <br />The lecture is awarded once in two years to a
+                distinguished potato research worker on the basis of lifetime
+                contributions to potato research and development. The Executive
+                Committee of IPA nominates the person for lecture award. The
+                recipient of the award has to deliver the lecture either in the
+                Annual Meeting/Seminar or Symposia or at any other suitable
+                function. The award carries a citation, a plaque and an amount
+                of Rs. 2500/- (to meet expenses on T.A. & D.A.). The award is
+                funded by IPA.
+                <br />
+                <br />
+             
+                <h3 class="ipa_heading"> IPA-Kaushalya Sikka Memorial Award </h3>
+                <br />
+                The IPA-Kaushalya Sikka Memorial Award is given once in four
+                years, starting from 2005, for outstanding contribution to
+                potato. The award consists of a sum of Rs 20,000 in cash and a
+                citation. The application can be made for individual or team
+                work. For team award, there can be a maximum of eight members
+                including the team leader. The team leader gets 50% of the total
+                prize money and the rest 50% is shared equally by the remaining
+                team workers. Each team member receives a separate citation.
+                <br />
+                <br />
+                The evaluation criteria are as follows:
+                <br />
+                • Conceptual clarity and originality of the work conducted over
+                the last 5 years, preceding the year of award.
+                <br />
+                • Quality of methodology adopted and innovative approaches used
+                to carry out the research.
+                <br />
+                • Major results, their scientific, technological and
+                socio-economic relevance.
+                <br />
+                • Quality of publications arising from the research work.
+                <br />
+                <br />
+                <h3 class="ipa_heading">    IPA-Chandra Prabha Singh Young Scientist Award </h3>
+                <br />
+                The IPA-Chandra Prabha Singh Young Scientist Award is given once
+                in two years, starting from 2011-2012 to advance excellence in
+                the field of potato research. The award consists of a sum of Rs
+                10,000 in cash and a citation.
+                <br />
+                <br />
+
+                The evaluation criteria are as follows:
+                <br />
+                • At least five year research experience in potato. It should be
+                supported by the published work in reputed journals.
+                <br />
+                • Age should not be more than 40 years as on 1st January of the
+                year for which the applications are invited for the award.
+                <br />
+                <br />
+                <br />
+             
+                <h3 class="ipa_heading">      Potato Grower Of The Year Award </h3>
+                <br />
+                It is awarded annually zone wise on a rotational basis. The zone
+                thus may have to be selected by the executive council for this
+                award every year. Three awards (1st, 2nd, 3rd) are given each
+                year. The awardees are given a certificate and one bag (of 80
+                kg) of a high quality seed potato. Applications are invited
+                through the respective Vice-Presidents of IPA, as well as
+                through the announcement in the IPA Newsletter/Potato Journal.
+                The committee comprising the selected Regional Vice-President
+                and the councillors call applications from member farmers, visit
+                the farms and decide the awardees. A minimum of 10 entries are
+                required failing which the contest for award will be declared
+                null and void. This award is funded by IPA and is effective from
+                1996-1997. A registration fee of Rs. 100/- is charged from the
+                contesting growers.
+                <br />
+                <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Footer Start -->
+    <footer class="mt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Call and Mail Us</h3>
+
+            <address>
+              <p class="bold">
+                <i class="fa-solid fa-phone"></i>
+                +91-177-2625073 <br />
+                &nbsp; &nbsp; +91-177-2624460
+              </p>
+            </address>
+            <p class="envelope-icon">
+              <i class="fa fa-envelope"></i>
+              <a href="#"> ipashimlahp@gmail.com</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Useful Links</h3>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="History.html"> History</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="constitution-by-laws.html">Constitution /By laws</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Present Executive.html">Present Executive</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="past-executive.html">Past Executive</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="ipa award.html">IPA Awards</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="ipa fellow.html">IPA fellow</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 subsribe">
+            <h3>&nbsp</h3>
+
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Membership.html"> Membership</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="potato journal.html">Potato Journal</a>
+              </li>
+              <!-- <li>
+                <i class="fa-solid fa-chevron-right"></i> <a href="">Editorial Boards</a>
+              </li> -->
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Proceeding Books.html">Proceeding Books</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="past Activity.html"> Past Activity Chronology</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Present Proceeding.html"> Present - Proceeding</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="Latest News .html">Latest News</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 social-sec">
+            <h3>Social</h3>
+            <p>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="text-center">
+          Copyright ©️ All Rights Reserved For Indian Potato Association Shimla
+          | <a href="https://www.honsol.com/ ">Designed & Developed by  Honsol</a> 
+      
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <button id="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Bootstrap Cdn Link -->
+    <script src="./js/index.js"></script>
+    <!-- ---up--down--- start-->
+
+    <script>
+      const scrollBtn = document.querySelector("#scroll-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollBtn.style.display = "block";
+        } else {
+          scrollBtn.style.display = "none";
+        }
+      });
+      scrollBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <!-- ---up--down---end -->
+  </body>
+</html>
